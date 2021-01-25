@@ -27,7 +27,10 @@ const getSlangWord = function (word) {
     }
   )
     .then((response) => response.json())
-    .then((data) => (result.innerHTML = data.list[0].definition))
+    .then(
+      (data) =>
+        (result.innerHTML = data.list[0].definition.replace(/[\][]/g, ""))
+    )
     .catch((err) => (error.innerHTML = errors[randomNumber]));
 };
 
