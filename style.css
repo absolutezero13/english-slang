@@ -14,23 +14,26 @@ body {
   margin-top: 3%;
 }
 .input-word {
-  font-size: 2vw;
-  width: 25vw;
-  height: 4vw;
+  font-size: 100%;
+  width: 35vw;
+  height: 8%;
   margin-top: 3%;
 }
 .find-slang {
   cursor: pointer;
   font-size: 3vw;
-  width: 20vw;
-  height: 5vw;
+  width: 30vw;
+  height: 10%;
+  margin-top: 5%;
 }
 .result {
   text-align: center;
   font-size: 2vw;
   width: 50vw;
-  height: 15vw;
+  height: 40%;
+  margin-bottom: 8%;
 }
 .error {
-  font-size: 3vw;
+  font-size: 2rem;
+  color: red;
 }
