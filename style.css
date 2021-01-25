@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper {
+  border: 1px solid black;
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+.input-word {
+  font-size: 2vw;
+  width: 25vw;
+  height: 4vw;
+  margin-top: 3%;
+}
+.find-slang {
+  cursor: pointer;
+  font-size: 3vw;
+  width: 20vw;
+  height: 5vw;
+}
+.result {
+  text-align: center;
+  font-size: 2vw;
+  width: 50vw;
+  height: 15vw;
+}
+.error {
+  font-size: 3vw;
+}
