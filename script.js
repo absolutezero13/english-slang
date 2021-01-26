@@ -31,7 +31,13 @@ const getSlangWord = function (word) {
       (data) =>
         (result.innerHTML = data.list[0].definition.replace(/[\][]/g, ""))
     )
-    .catch((err) => (error.innerHTML = errors[randomNumber]));
+    .catch((err) => {
+      error.innerHTML = "⚠️ " + errors[randomNumber];
+      result.innerHTML = "";
+    });
 };
 
 findSlangBtn.addEventListener("click", () => getSlangWord(inputWord.value));
+inputWord.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") getSlangWord(inputWord.value);
+});
